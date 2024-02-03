@@ -30,7 +30,7 @@ int main() {
   int *ptr = &num;       // pointer to num
   cout << *ptr << endl;  // accessing value using *ptr
 
-  int &ref = num;  // declaring a refrence
+  int &ref = num;  // declaring a reference
   ref = 95;
   cout << num << endl;
 
@@ -40,8 +40,8 @@ int main() {
 
   cout << *p1 << ", " << *p2 << endl;
 
-  // // transfering the ownership
-  unique_ptr<int, MyDeleter> p3 = move(p1);
+  // // transferring the ownership
+  unique_ptr<int, MyDeleter> p3 = std::move(p1);
 
   cout << *p2 << ", " << *p3 << endl;
 

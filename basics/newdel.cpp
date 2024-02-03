@@ -1,6 +1,6 @@
 // Manual Memory management in C++
 #include <iostream>
-#include <memory>
+// #include <memory>
 
 using namespace std;
 
